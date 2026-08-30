@@ -1,43 +1,43 @@
 {
   "photos": [
     {
-      "path": "assets/photos/IMG-20260425-WA0043.jpg",
+      "path": "IMG-20260425-WA0043.jpg",
       "date": "2026-04-25",
       "caption": "Our Memory #0043",
       "alt": "Our Memory #0043"
     },
     {
-      "path": "assets/photos/IMG-20260425-WA0044.jpg",
+      "path": "IMG-20260425-WA0044.jpg",
       "date": "2026-04-25",
       "caption": "Our Memory #0044",
       "alt": "Our Memory #0044"
     },
     {
-      "path": "assets/photos/IMG-20260425-WA0045.jpg",
+      "path": "IMG-20260425-WA0045.jpg",
       "date": "2026-04-25",
       "caption": "Our Memory #0045",
       "alt": "Our Memory #0045"
     },
     {
-      "path": "assets/photos/IMG-20260512-WA0054.jpg",
+      "path": "IMG-20260512-WA0054.jpg",
       "date": "2026-05-12",
       "caption": "Our Memory #0054",
       "alt": "Our Memory #0054"
     },
     {
-      "path": "assets/photos/IMG-20260512-WA0055.jpg",
+      "path": "IMG-20260512-WA0055.jpg",
       "date": "2026-05-12",
       "caption": "Our Memory #0055",
       "alt": "Our Memory #0055"
     },
     {
-      "path": "assets/photos/IMG-20260512-WA0056.jpg",
+      "path": "/photos/IMG-20260512-WA0056.jpg",
       "date": "2026-05-12",
       "caption": "Our Memory #0056",
       "alt": "Our Memory #0056"
     },
     {
-      "path": "assets/photos/IMG-20260512-WA0057.jpg",
+      "path": "IMG-20260512-WA0057.jpg",
       "date": "2026-05-12",
       "caption": "Our Memory #0057",
       "alt": "Our Memory #0057"
@@ -49,67 +49,67 @@
       "alt": "Our Memory #0058"
     },
     {
-      "path": "assets/photos/IMG-20260512-WA0059.jpg",
+      "path": "IMG-20260512-WA0059.jpg",
       "date": "2026-05-12",
       "caption": "Our Memory #0059",
       "alt": "Our Memory #0059"
     },
     {
-      "path": "assets/photos/IMG-20260512-WA0060.jpg",
+      "path": "IMG-20260512-WA0060.jpg",
       "date": "2026-05-12",
       "caption": "Our Memory #0060",
       "alt": "Our Memory #0060"
     },
     {
-      "path": "assets/photos/IMG-20260512-WA0061.jpg",
+      "path": "IMG-20260512-WA0061.jpg",
       "date": "2026-05-12",
       "caption": "Our Memory #0061",
       "alt": "Our Memory #0061"
     },
     {
-      "path": "assets/photos/IMG-20260512-WA0062.jpg",
+      "path": "IMG-20260512-WA0062.jpg",
       "date": "2026-05-12",
       "caption": "Our Memory #0062",
       "alt": "Our Memory #0062"
     },
     {
-      "path": "assets/photos/IMG-20260512-WA0063.jpg",
+      "path": "IMG-20260512-WA0063.jpg",
       "date": "2026-05-12",
       "caption": "Our Memory #0063",
       "alt": "Our Memory #0063"
     },
     {
-      "path": "assets/photos/IMG-20260512-WA0064.jpg",
+      "path": "IMG-20260512-WA0064.jpg",
       "date": "2026-05-12",
       "caption": "Our Memory #0064",
       "alt": "Our Memory #0064"
     },
     {
-      "path": "assets/photos/IMG-20260512-WA0065.jpg",
+      "path": "IMG-20260512-WA0065.jpg",
       "date": "2026-05-12",
       "caption": "Our Memory #0065",
       "alt": "Our Memory #0065"
     },
     {
-      "path": "assets/photos/IMG-20260512-WA0066.jpg",
+      "path": "IMG-20260512-WA0066.jpg",
       "date": "2026-05-12",
       "caption": "Our Memory #0066",
       "alt": "Our Memory #0066"
     },
     {
-      "path": "assets/photos/IMG-20260603-WA0001.jpg",
+      "path": "IMG-20260603-WA0001.jpg",
       "date": "2026-06-03",
       "caption": "Our Memory #0001",
       "alt": "Our Memory #0001"
     },
     {
-      "path": "assets/photos/IMG-20260604-WA0008.jpg",
+      "path": "IMG-20260604-WA0008.jpg",
       "date": "2026-06-04",
       "caption": "Our Memory #0008",
       "alt": "Our Memory #0008"
     },
     {
-      "path": "assets/photos/IMG-20260604-WA0009.jpg",
+      "path": "IMG-20260604-WA0009.jpg",
       "date": "2026-06-04",
       "caption": "Our Memory #0009",
       "alt": "Our Memory #0009"
@@ -607,7 +607,7 @@
       "title": "Ordinary"
     },
     {
-      "path": "assets/music/Thank_God_I_Found_You_-_Mariah_Carey,_98_Degrees___Joe__Lyrics__🎵(256k).mp3",
+      "path": "Thank_God_I_Found_You_-_Mariah_Carey,_98_Degrees___Joe__Lyrics__🎵(256k).mp3",
       "title": "Thank God I Found You Mariah Carey, 98 Degrees Joe Lyrics 🎵"
     }
   ]
