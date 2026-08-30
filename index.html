@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#b86b7b">
+  <meta name="description" content="A private birthday surprise for Nonkie.">
+  <title>Nonkie's Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#memories">Skip to memories</a>
+
+  <main>
+    <section id="giftScene" class="gift-scene" aria-labelledby="sceneTitle">
+      <div class="ambient" aria-hidden="true"><div id="ambientDecorations" class="ambient-decorations"></div></div>
+      <div class="scene-copy">
+        <p class="eyebrow">A little magic is waiting</p>
+        <h1 id="sceneTitle">A special surprise is waiting for you <span aria-hidden="true">❤️</span></h1>
+        <div id="countdown" class="countdown" aria-live="polite">
+          <div><strong id="days">00</strong><span>Days</span></div>
+          <div><strong id="hours">00</strong><span>Hours</span></div>
+          <div><strong id="minutes">00</strong><span>Minutes</span></div>
+          <div><strong id="seconds">00</strong><span>Seconds</span></div>
+        </div>
+        <p id="statusMessage" class="status-message" role="status"></p>
+      </div>
+
+      <button id="giftButton" class="gift-button" type="button" aria-label="Open the birthday present" aria-disabled="true">
+        <span class="gift-shadow" aria-hidden="true"></span>
+        <span class="gift" aria-hidden="true">
+          <span class="gift-lid"><i class="bow bow-left"></i><i class="bow bow-right"></i><i class="knot"></i></span>
+          <span class="gift-box"><i class="ribbon-v"></i><i class="ribbon-h"></i></span>
+        </span>
+      </button>
+      <p id="giftHint" class="gift-hint">The present will unlock at midnight.</p>
+    </section>
+
+    <section id="memories" class="memories" hidden aria-labelledby="memoryTitle">
+      <div class="fairy-lights" aria-hidden="true"></div>
+      <header class="memory-hero">
+        <p class="eyebrow">Our story, one beautiful moment at a time</p>
+        <h2 id="memoryTitle"></h2>
+        <div class="birthday-cake" aria-hidden="true">
+          <i class="candle candle-one"></i><i class="candle candle-two"></i><i class="candle candle-three"></i>
+          <span class="cake-top"></span><span class="cake-base"></span><span class="cake-plate"></span>
+        </div>
+        <button id="startBooth" class="booth-start" type="button" disabled>
+          Open Our Photo Booth ❤️
+        </button>
+        <div id="heartfeltMessage" class="love-letter"></div>
+      </header>
+
+      <section id="photoBooth" class="photo-booth" hidden aria-label="Our memory photo booth">
+        <button id="exitBooth" class="booth-exit" type="button">← Birthday message</button>
+        <div id="boothStage" class="booth-stage" tabindex="0" role="button" aria-label="Show the next memory">
+          <img id="boothBackdrop" class="booth-backdrop" alt="" aria-hidden="true">
+          <div class="booth-frame">
+            <img id="boothImage" class="booth-image" alt="" decoding="async">
+          </div>
+          <div class="booth-details">
+            <div><strong id="boothCaption">Our beautiful memory</strong><time id="boothDate"></time></div>
+            <span id="boothCounter">1 of 1</span>
+          </div>
+          <div class="booth-progress" aria-hidden="true"><i id="boothProgressBar"></i></div>
+        </div>
+        <div class="booth-controls" aria-label="Slideshow controls">
+          <button id="boothPrevious" type="button" aria-label="Previous photo">‹</button>
+          <button id="boothPlayPause" type="button" aria-label="Pause slideshow">⏸</button>
+          <button id="boothNext" type="button" aria-label="Next photo">›</button>
+        </div>
+        <p class="booth-hint">Tap the photo for the next memory · Each photo changes after five seconds</p>
+      </section>
+
+      <aside class="player" aria-label="Music player">
+        <button id="playerToggle" class="player-toggle" type="button" aria-expanded="false">♫ Our playlist</button>
+        <div id="playerPanel" class="player-panel" hidden>
+          <p id="trackTitle">Add songs to begin</p>
+          <audio id="audioPlayer" preload="metadata"></audio>
+          <div class="player-controls">
+            <button id="previousTrack" type="button" aria-label="Previous song">⏮</button>
+            <button id="playPause" type="button" aria-label="Play music">▶</button>
+            <button id="nextTrack" type="button" aria-label="Next song">⏭</button>
+            <button id="muteButton" type="button" aria-label="Mute music">🔊</button>
+            <label>Volume <input id="volume" type="range" min="0" max="1" step="0.05" value="0.7"></label>
+          </div>
+          <ol id="playlist" class="playlist"></ol>
+        </div>
+      </aside>
+
+      <div class="timeline-heading" hidden>
+        <span id="memoryCounter">0 memories</span>
+        <button id="performanceToggle" class="subtle-button" type="button">Low-motion mode</button>
+      </div>
+      <div id="timeline" class="timeline" hidden aria-live="polite"></div>
+      <div id="emptyState" class="empty-state" hidden>
+        <span aria-hidden="true">🖼️</span>
+        <h3>Your memories will appear here</h3>
+        <p>Add dated pictures to <code>assets/photos</code>, then regenerate the manifest.</p>
+      </div>
+      <button id="loadMore" class="load-more" type="button" hidden>Load more memories</button>
+      <div id="loadSentinel" aria-hidden="true"></div>
+      <footer>Made with love, especially for you <span aria-hidden="true">❤️</span></footer>
+    </section>
+  </main>
+
+  <dialog id="lightbox" class="lightbox" aria-label="Memory viewer">
+    <button id="closeLightbox" class="lightbox-close" type="button" aria-label="Close photo">×</button>
+    <button id="previousPhoto" class="lightbox-nav previous" type="button" aria-label="Previous photo">‹</button>
+    <figure>
+      <img id="lightboxImage" alt="" decoding="async">
+      <figcaption><strong id="lightboxCaption"></strong><time id="lightboxDate"></time></figcaption>
+    </figure>
+    <button id="nextPhoto" class="lightbox-nav next" type="button" aria-label="Next photo">›</button>
+  </dialog>
+
+  <div id="effectsLayer" class="effects-layer" aria-hidden="true"></div>
+  <script src="script.js" defer></script>
+</body>
+</html>
