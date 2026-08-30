@@ -1,0 +1,1 @@
+Add songs here, then run: python3 generate-manifest.py
